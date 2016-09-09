@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="client.ieee.adhoc.webserviceclient.FragmentAgregar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AGREGAR"
+            android:id="@+id/textViewContenido"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewContenido"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textInputLayoutNombre"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:id="@+id/editNombre"
+                android:elegantTextHeight="false"
+                android:inputType="textPersonName"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textInputLayoutNombre"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textInputLayoutDomicilio"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Domicilio"
+                android:id="@+id/editDomicilio"
+                android:inputType="textPersonName"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_gravity="end|bottom"
+        android:src="@android:drawable/ic_input_add"
+        app:borderWidth="0dp" />
+
+
+
+</FrameLayout>
